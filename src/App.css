@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --page-bg: #2f2f2f;
+  --panel-bg: #3b3b3b;
+  --panel-border: #4b4b4b;
+  --accent: #1f8bff;
+  --text-strong: #f4f4f4;
+  --text-muted: #b7b7b7;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--page-bg);
+  color: var(--text-strong);
+  font-family: 'Space Grotesk', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #050505;
+  padding: 16px 32px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+}
+
+.header img {
+  height: 42px;
+}
+
+.section {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding: 16px 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.inputdiv {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.inputdiv input {
+  width: 200px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid var(--panel-border);
+  background: var(--panel-bg);
+  color: var(--text-strong);
+  padding: 0 14px;
+  font-size: 0.8rem;
+}
+
+.inputdiv button {
+  height: 32px;
+  padding: 0 16px;
+  border-radius: 6px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.inputdiv button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(31, 139, 255, 0.25);
+}
+
+.errMsg {
+  margin-top: 4px;
+  color: #ff6f6f;
+  font-weight: 500;
+}
+
+.weatherinfo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 8px 0;
+  min-height: 140px;
+  max-width: 640px;
+}
+
+.weatherinfo__primary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.weatherinfo__primary img {
+  height: 70px;
+  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.4));
+}
+
+.weatherinfo__primary div {
+  text-transform: capitalize;
+}
+
+.weatherinfo__city {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.weatherinfo__temp {
+  margin: 4px 0 0;
+  font-size: clamp(2rem, 4.5vw, 2.6rem);
+  font-weight: 700;
+}
+
+.weatherinfo__details {
+  min-width: 200px;
+  font-size: 0.85rem;
+}
+
+.weatherinfo__details p {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0;
+  color: var(--text-muted);
+}
+
+.weatherinfo__details span:first-child {
+  font-weight: 600;
+  color: var(--text-strong);
+}
+
+.footer {
+  margin-top: auto;
+  background: #050505;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.progress {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress img {
+  height: 56px;
+}

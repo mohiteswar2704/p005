@@ -1,0 +1,16 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Space Grotesk', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background: #1a1a1a;
+  color: #f4f4f4;
+}
+
+#root {
+  min-height: 100%;
+}
+
+:focus {
+  outline: none;
+}
